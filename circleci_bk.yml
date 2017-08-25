@@ -12,14 +12,12 @@
     #- echo "8933bad161af4178b1185d1a37fbf41ea5269c55" > /usr/local/android-sdk-linux/licenses/android-sdk-licens
     #- echo "--- post end ---"
 
-dependencies:
-  override:
-
+##dependencies:
   #pre:
-  #- touch /home/ubuntu/test
-    - wget "https://services.gradle.org/distributions/gradle-2.9-bin.zip"; unzip gradle-2.9-bin.zip
-    - echo y | android update sdk --no-ui --all --filter tool,extra-android-m2repository,extra-android-support,extra-google-google_play_services,extra-google-m2repository,android-25
-    - echo y | android update sdk --no-ui --all --filter build-tools-25.0.1
+    #- touch /home/ubuntu/test
+    #- wget "https://services.gradle.org/distributions/gradle-2.9-bin.zip"; unzip gradle-2.9-bin.zip
+    #- echo y | android update sdk --no-ui --all --filter tool,extra-android-m2repository,extra-android-support,extra-google-google_play_services,extra-google-m2repository,android-25
+    #- echo y | android update sdk --no-ui --all --filter build-tools-25.0.1
 
 test:
   override:
