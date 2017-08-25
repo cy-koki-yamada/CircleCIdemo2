@@ -7,6 +7,8 @@ machine:
 
 dependencies:
   pre:
+    - mkdir -p /home/ubuntu/.android
+    - touch /home/ubuntu/.android/repositories.cfg
     # license
     - mkdir -p /usr/local/android-sdk-linux/licenses
     - echo "8933bad161af4178b1185d1a37fbf41ea5269c55" > /usr/local/android-sdk-linux/licenses/android-sdk-licens
